@@ -22,4 +22,9 @@ public class Curso extends Atividade {
     public int calcularXp() {
         return XP_PADRAO * cargaHoraria;
     }
+
+    @Override
+    public String toString() {
+        return getTitulo() + ": " + getCargaHoraria() + " horas";
+    }
 }
